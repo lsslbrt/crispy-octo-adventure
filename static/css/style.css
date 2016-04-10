@@ -1,0 +1,133 @@
+/* RESPONSIVE ***********************************/
+
+@media (min-width: 768px) {
+  #about {
+    margin-top: 125px;
+  }
+  .marginright {
+    padding-left: 75px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* TYPOGRAPHY ***********************************/
+
+h1 {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p.small {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #FFF;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+::selection {
+  background: #FAFAFA;
+  }
+
+
+/* BASE STYLES ***********************************/
+
+body {
+  background-image: linear-gradient(to right, #252739, #483559);
+}
+
+
+/* ABOUT ***********************************/
+
+#about {
+  max-width: 700px;
+}
+
+h1.title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+p.dribbble {
+  margin-top: 25px;
+}
+
+hr.separator {
+  border: 1px solid #FFF;
+}
+
+/* CURRENTLY ***********************************/
+
+#currently {
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+h2.status {
+      margin: 25px 0px 5px 0px;
+}
+
+
+/* FOOTER ***********************************/
+
+#footer {
+  color: #777;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #333;
+}
+
+#footer a:hover {
+  color: #FFF;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#push,
+#footer {
+  height: 30px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -30px;
+}
