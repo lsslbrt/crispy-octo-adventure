@@ -118,14 +118,14 @@ p.dribbble {
 }
 
 a.dribbble:hover {
-  color: #00C4FF;
+  color: #1da1f2;
 }
 
 .separator {
   margin: 50px 0;
   height: 1px;
-  width: 75px; 
-  background: #00C4FF;
+  width: 30px; 
+  background: #1da1f2;
 }
 
 /* CURRENTLY ***********************************/
@@ -143,7 +143,7 @@ p.linkedin {
   color: rgba(255,255,255,0.6);
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 
