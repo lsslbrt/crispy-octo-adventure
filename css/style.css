@@ -1,51 +1,90 @@
-/* RESPONSIVE ***********************************/
+@font-face {
+      font-family: Nantes;
+      src: url("../fonts/NantesWeb-Regular.woff2") format('woff2'),
+           url("../fonts/NantesWeb-Regular.woff") format('woff'),
+           url("../fonts/NantesWeb-Regular.eot") format('embedded-opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+@font-face {
+      font-family: hk-grotesk;
+      src: url("../fonts/hkg-m.woff2") format('woff2'),
+           url("../fonts/hkg-m.woff") format('woff'),
+           url("../fonts/hkg-m.ttf") format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  background-color: #d0e8db;
-  color: #003349;
-  font-family: "sofia-pro", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.25rem;
-}
-
-.headline {
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
-  margin: 8rem 8rem 2rem 8rem;
+  background-color: #000000;
 }
 
 .bio {
-  max-width: 650px;
+  width: 400px;
   display: flex;
-  flex-direction: row;
-  margin: 0rem 8rem;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 2.25rem;
+  color: #FFFFFF;
+  font-family: "Nantes", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
   margin: 0 0 1rem 0;
 }
 
-span.bold {
-  font-weight: 700;
+p {
+  color: #FFFFFF;
+  font-family: "Nantes", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
 }
 
-a {
-  font-weight: 700;
-  color: #003349;
+.underline {
   text-decoration: none;
-  margin-right: 1rem;
+  display: inline-block;
+  position: relative;
+  color: #777777;
+  transition: color .9s cubic-bezier(.19,1,.22,1);
+}
+.underline:hover {
+  color: #FFFFFF;
+  transition: color .9s cubic-bezier(.19,1,.22,1);
+}
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom right;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-a:hover {
-  color: #003349;
+.footer {
+  flex-shrink: 0;
+  padding: 1rem 0;
+  width: 400px;
+  color: #777777;
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
 }
-
-
