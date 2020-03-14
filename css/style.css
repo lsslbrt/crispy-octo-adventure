@@ -24,6 +24,24 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -43,6 +61,12 @@ a:hover {
 ul {
   list-style: none;
   padding: 0;
+  line-height: 1.75;
+  margin: 0;
+}
+
+ul.writing {
+  margin-bottom: 2rem;
 }
 
 li {
@@ -77,12 +101,12 @@ li {
 @media (min-width: 768px) {
   .home {
     width: 70%;
-    margin: 8rem auto;
+    margin: 8rem auto 4rem auto;
   }
   .about {
     font-size: 4rem;
     line-height: 4.75rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -90,11 +114,4 @@ li {
   color: #21211A;
   font-family: "argestadisplay", serif;
   font-weight: 400;
-}
-
-.belowfold {
-}
-
-.email {
-  color: #000000;
 }
