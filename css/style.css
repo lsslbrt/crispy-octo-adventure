@@ -1,90 +1,88 @@
 @font-face {
-      font-family: Nantes;
-      src: url("../fonts/NantesWeb-Regular.woff2") format('woff2'),
-           url("../fonts/NantesWeb-Regular.woff") format('woff'),
-           url("../fonts/NantesWeb-Regular.eot") format('embedded-opentype');
+      font-family: argestadisplay;
+      src: url("../fonts/argestadisplay-regular-webfont.woff2") format('woff2'),
+           url("../fonts/argestadisplay-regular-webfont.woff") format('woff'),
+           url("../fonts/argestadisplay-regular-webfont.eot") format('embedded-opentype');
       font-weight: 400;
       font-style: normal;
     }
 
 @font-face {
-      font-family: hk-grotesk;
-      src: url("../fonts/hkg-m.woff2") format('woff2'),
-           url("../fonts/hkg-m.woff") format('woff'),
-           url("../fonts/hkg-m.ttf") format('truetype');
-      font-weight: 500;
+      font-family: geomanist;
+      src: url("../fonts/geomanist-regular-webfont.woff2") format('woff2'),
+           url("../fonts/geomanist-regular-webfont.woff") format('woff'),
+           url("../fonts/geomanist-regular-webfont.ttf") format('truetype');
+      font-weight: 400;
       font-style: normal;
     }
 
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #C2C388;
+  font-family: "geomanist", sans-serif;
+  font-size: 1.125rem;
   margin: 0;
-  background-color: #000000;
+  padding: 0;
 }
 
-.bio {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  justify-content: center;
-}
-
-h1 {
-  color: #FFFFFF;
-  font-family: "Nantes", serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-  margin: 0 0 1rem 0;
-}
-
-p {
-  color: #FFFFFF;
-  font-family: "Nantes", serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-}
-
-.underline {
+a {
   text-decoration: none;
-  display: inline-block;
-  position: relative;
-  color: #777777;
-  transition: color .9s cubic-bezier(.19,1,.22,1);
-}
-.underline:hover {
-  color: #FFFFFF;
-  transition: color .9s cubic-bezier(.19,1,.22,1);
-}
-.underline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  transform-origin: bottom right;
-  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
-}
-.underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  color: inherit;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ADAD27;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -ms-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
-.footer {
-  flex-shrink: 0;
-  padding: 1rem 0;
-  width: 400px;
-  color: #777777;
-  font-family: "hk-grotesk", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
+a:hover {
+  color: #ADAD27;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .home {
+    width: 85%;
+    margin: 4rem auto;
+  }
+  .about {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    width: 70%;
+    margin: 8rem auto;
+  }
+  .about {
+    font-size: 4rem;
+    line-height: 4.75rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.about {
+  color: #21211A;
+  font-family: "argestadisplay", serif;
+  font-weight: 400;
+}
+
+.belowfold {
+}
+
+.email {
+  color: #000000;
 }
