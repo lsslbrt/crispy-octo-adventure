@@ -17,7 +17,7 @@
     }
 
 body {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   font-family: "geomanist", sans-serif;
   font-size: 1.125rem;
   margin: 0;
@@ -46,7 +46,7 @@ a {
   text-decoration: none;
   color: inherit;
   padding-bottom: 2px;
-  border-bottom: 1px solid #ADAD27;
+  border-bottom: 1px solid #7aa2d2;
   -webkit-transition: color 0.1s ease-in-out;
   -moz-transition: color 0.1s ease-in-out;
   -ms-transition: color 0.1s ease-in-out;
@@ -55,7 +55,7 @@ a {
 }
 
 a:hover {
-  color: #ADAD27;
+  color: #7aa2d2;
 }
 
 ul {
@@ -76,7 +76,7 @@ li {
 
 .yellow {
   display: flex;
-  background-color: #C2C388;
+  background: linear-gradient(135deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
   width: auto;
   height: 100vh;
 }
@@ -84,7 +84,7 @@ li {
 .about {
   display: flex;
   align-items: center;
-  color: #21211A;
+  color: #0e1a29;
   font-family: "argestadisplay", serif;
   font-weight: 400;
   -webkit-animation-duration: 1s;
